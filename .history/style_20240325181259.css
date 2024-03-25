@@ -429,16 +429,15 @@ section.matching-model {
         color: #303535;
     }
 
-    .sub-title {
+    .sub-title{
         font-size: 2vw;
     }
-
-    .main-title {
+   .main-title {
         font-size: 3vw;
         line-height: 1.5;
     }
 
-    .main-title.green {
+    .main-title.green{
         font-size: 2.5vw;
     }
 
@@ -472,7 +471,6 @@ section.matching-model {
             justify-content: flex-end;
             gap: 20px;
             width: 50%;
-
             .imgWrap_list {
                 width: 1000px;
                 height: auto;
@@ -517,7 +515,7 @@ section.matching-model {
                 line-height: 1.2;
             }
 
-            .info-list-title.bold-label {
+            .info-list-title.bold-label{
                 font-size: 1.5vw;
             }
         }
@@ -1332,7 +1330,7 @@ footer {
             padding-top: 0;
 
             div.content {
-                height: 650px;
+                height: 679px;
                 padding: 0 24px;
                 display: flex;
                 justify-content: center;
@@ -1512,7 +1510,7 @@ footer {
                 width: 100%;
             }
 
-            .search-model-info .app_slide {
+            .search-model-info .app_slide{
                 padding: 0;
             }
 
@@ -1574,8 +1572,8 @@ footer {
                 h3.main-title {
                     padding: 0 24px;
                     text-align: center;
-                    font-size: 9vw;
-                    line-height: 1.5;
+                    font-size: 34px;
+                    line-height: 55px;
                 }
             }
 
@@ -1641,8 +1639,8 @@ footer {
 
 
         p.content {
-            font-size: 6vw;
-            line-height: 1.4;
+            font-size: 24px;
+            line-height: 36px;
             font-weight: 400;
         }
 
@@ -1655,8 +1653,8 @@ footer {
         }
 
         .main-title {
-            font-size: 8vw;
-            line-height: 1.5;
+            font-size: 34px;
+            line-height: 55px;
             font-weight: 900;
             margin-top: 6px;
             margin-bottom: 40px;
@@ -1677,30 +1675,29 @@ footer {
         }
     }
 
-    .app_slide {
+    .app_slide{
         padding: 0 20px;
         margin-bottom: 45px;
     }
-
-    .app_slide .app_slide_wrapp {
+    .app_slide .app_slide_wrapp{
         width: 300px;
         height: auto;
     }
 
-    .app_slide .app_slide_wrapp img {
+    .app_slide .app_slide_wrapp img{
         width: 100%;
         height: 100%;
     }
 
-    ul.slick-dots {
-        display: flex !important;
+    ul.slick-dots{
+        display: flex!important;
         align-items: center;
         margin-top: 12px;
         justify-content: center;
         gap: 10px;
     }
 
-    ul.slick-dots li {
+    ul.slick-dots li{
         font-size: 0;
         width: 8px;
         height: 8px;
@@ -1708,7 +1705,7 @@ footer {
         background-color: #D2D8D9;
     }
 
-    ul.slick-dots li.slick-active {
+    ul.slick-dots li.slick-active{
         background-color: #80888A;
     }
 
@@ -1720,14 +1717,12 @@ footer {
     section.matching-model article.search-model .info-list li p {
         padding-right: 20px;
         text-align: left;
-        font-size: 4vw;
-        word-break: keep-all;
+        font-size: 18px;
     }
 
-    section.matching-model article.search-model .info-list li .info-list-title.bold-label {
-        font-size: 5vw;
-    }
-
+        section.matching-model article.search-model .info-list li .info-list-title.bold-label{
+            font-size: 20px;
+        }
     section.matching-model p.sub-title.model-image-rule {
         text-align: center;
     }
@@ -1735,7 +1730,7 @@ footer {
     section.matching-model p.sub-title.model-image-rule .sub-point.green {
         color: #C8D3E1;
         text-align: center;
-        font-size: 7vw;
+        font-size: 24px;
         font-weight: 900;
         letter-spacing: -0.4px;
         line-height: normal;
@@ -1819,11 +1814,10 @@ footer {
             p {
                 color: #717C8A;
                 text-align: left;
-                font-size: 6vw;
+                font-size: 20px;
                 font-weight: 400;
                 line-height: 24px;
                 letter-spacing: 0px;
-                word-break: keep-all;
             }
 
             h2 {
@@ -1881,8 +1875,6 @@ footer {
 
         .footer-scrum {
             padding: 24px;
-            gap: 0;
-            justify-content: space-between;
         }
 
         .footer-mid {
@@ -1957,7 +1949,7 @@ footer {
     }
 
     .plan-guide .sub-point.sub-title {
-        font-size: 4.5vw;
+        font-size: 20px;
         font-weight: 700;
         line-height: 36px;
         margin-top: 0;
@@ -1965,11 +1957,10 @@ footer {
 
     .plan-guide .title.point {
         color: #8276F5;
-        font-size: 9.5vw;
+        font-size: 34px;
         font-weight: 900;
-        line-height: 1.3;
+        line-height: 55px;
         margin-top: 0;
-        word-break: break-all;
     }
 
     article.circle,
@@ -1995,23 +1986,21 @@ footer {
             .title.sub-point {
                 color: #C8D3E1;
                 text-align: center;
-                font-size: 10vw;
+                font-size: 38px;
                 font-weight: 900;
                 letter-spacing: -0.4px;
             }
 
             .title.point {
                 line-height: 1.2;
-                font-size: 10vw;
             }
 
         }
     }
 
     section.matching-model article.real-review p {
-        font-size: 5.2vw;
-        line-height: 1.4;
-        word-break: keep-all;
+        font-size: 20px;
+        line-height: 36px;
     }
 
     section.matching-model article.real-review .review-list .review-list-item {
@@ -2037,16 +2026,15 @@ footer {
     .education .span-opcity {
         color: #9A9A9A;
         text-align: center;
-        font-size: 6vw;
+        font-size: 21px;
         font-weight: 400;
-        line-height: 1.2;
+        line-height: 36px;
         margin-top: 40px;
     }
 
     section.matching-model .model-grid .grid-title {
         text-align: left;
         margin: 50px 0 25px;
-        font-size: 6vw;
     }
 
     article.education p {
@@ -2086,15 +2074,14 @@ footer {
         font-size: 20px;
     }
 
-    section.matching-model article.popular-model .model-list .model-list-item.model-1 {
-        background: no-repeat center / cover url('./img/popular_list01.png')
+    section.matching-model article.popular-model .model-list .model-list-item.model-1{
+        background: no-repeat center / cover url('./img/popular_list01.png')   
+    }
+    section.matching-model article.popular-model .model-list .model-list-item.model-2{
+        background: no-repeat center / cover url('./img/popular_list02.png')    
     }
 
-    section.matching-model article.popular-model .model-list .model-list-item.model-2 {
-        background: no-repeat center / cover url('./img/popular_list02.png')
-    }
-
-    section.matching-model article.popular-model .model-list .model-list-item.model-3 {
+    section.matching-model article.popular-model .model-list .model-list-item.model-3{
         background: no-repeat center / cover url('./img/popular_list03.png')
     }
 
@@ -2111,39 +2098,17 @@ footer {
     }
 
 
-    .slick-list.draggable {
-        padding: 0 !important;
+    .slick-list.draggable{
+        padding: 0!important;
     }
-
-    .slick-slide {
+    .slick-slide{
         margin: 0 10px;
     }
 
-    section.matching-model article.real-review .review-list .review-list-item .content {
-        margin: 24px 0 0;
-        font-size: 5vw;
-        word-break: break-all;
-    }
-
-    p.model_rules_wrapp {
-        font-size: 3.5vw;
-    }
-
-
-
-    section.matching-model article.real-review .real-review-info .main-title {
-        margin-right: 0;
-    }
-
-    section.plan-guide .plan-list .plan-item .plan-item-info .plan-detail-list .plan-detail-list-item .label-value {
-        font-size: 4.3vw;
-    }
-
-    footer .footer-upper .customer-service .customer-service-detail div .label {
-        flex: 2;
-    }
-
-    footer .footer-upper .customer-service .customer-service-detail div .value {
-        flex: 6;
-    }
+    section.matching-model
+article.real-review
+.review-list
+.review-list-item .content{
+    margin: 24px 0 0;
+}
 }

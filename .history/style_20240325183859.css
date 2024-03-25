@@ -1332,7 +1332,7 @@ footer {
             padding-top: 0;
 
             div.content {
-                height: 650px;
+                height: 679px;
                 padding: 0 24px;
                 display: flex;
                 justify-content: center;
@@ -2137,13 +2137,5 @@ footer {
 
     section.plan-guide .plan-list .plan-item .plan-item-info .plan-detail-list .plan-detail-list-item .label-value {
         font-size: 4.3vw;
-    }
-
-    footer .footer-upper .customer-service .customer-service-detail div .label {
-        flex: 2;
-    }
-
-    footer .footer-upper .customer-service .customer-service-detail div .value {
-        flex: 6;
     }
 }
