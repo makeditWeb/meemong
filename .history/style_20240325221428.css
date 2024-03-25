@@ -810,7 +810,6 @@ section.matching-model {
                 border-radius: 6px;
                 position: relative;
                 display: block;
-                background-size: contain!important;
             }
 
             .inactive::after {
@@ -1340,12 +1339,6 @@ footer {
     color: var(--point-green-secondary);
 }
 
-p.model_rules_wrapp{
-    color: #222;
-font-size: 13px;
-font-weight: 400;
-line-height: 16px;
-}
 .bold-label {}
 
 @media screen and (max-width: 768px) {
