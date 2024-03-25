@@ -1782,14 +1782,14 @@ footer {
                 min-width: 0;
                 position: absolute;
                 bottom: -20px;
-                width: 100%;
+                width: 360px;
                 height: 170px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
 
                 p {
-                    font-size: 6.5vw;
+                    font-size: 27px;
                     line-height: 30px;
                     text-align: center;
                 }
@@ -1995,7 +1995,7 @@ footer {
             .title.sub-point {
                 color: #C8D3E1;
                 text-align: center;
-                font-size: 9vw;
+                font-size: 10vw;
                 font-weight: 900;
                 letter-spacing: -0.4px;
             }
@@ -2050,13 +2050,9 @@ footer {
     }
 
     article.education p {
-        text-align: center;
-        word-break: keep-all;
-        line-height: 1.5;
-    }
-
-    article.education p.model_rules_wrapp{
         text-align: left;
+        line-height: 36px;
+        line-height: 1.5;
     }
 
     article.education p span {
@@ -2152,7 +2148,7 @@ footer {
         flex: 6;
     }
 
-    section.matching-job article.matching-job p.content{
+    article.matching-job, article.lightning-matching, article.education, article.circle, article.plan-guide > p{
         font-size: 6vw;
         line-height: 1.4;
     }

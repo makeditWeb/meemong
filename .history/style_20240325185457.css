@@ -1995,7 +1995,7 @@ footer {
             .title.sub-point {
                 color: #C8D3E1;
                 text-align: center;
-                font-size: 9vw;
+                font-size: 10vw;
                 font-weight: 900;
                 letter-spacing: -0.4px;
             }
@@ -2050,13 +2050,10 @@ footer {
     }
 
     article.education p {
+        text-align: left;
         text-align: center;
         word-break: keep-all;
         line-height: 1.5;
-    }
-
-    article.education p.model_rules_wrapp{
-        text-align: left;
     }
 
     article.education p span {
