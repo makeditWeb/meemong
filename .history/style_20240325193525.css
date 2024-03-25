@@ -930,10 +930,6 @@ article.plan-guide {
 section.plan-guide.green h1{
     color: #19A1C4;
 }
-
-section.plan-guide.green p.sub-title{
-    color: #19A1C4;
-}
 section.plan-guide {
     background-color: var(--black);
     padding-bottom: 225px;

@@ -927,11 +927,7 @@ article.plan-guide {
     }
 }
 
-section.plan-guide.green h1{
-    color: #19A1C4;
-}
-
-section.plan-guide.green p.sub-title{
+section.plan-guide h1{
     color: #19A1C4;
 }
 section.plan-guide {
