@@ -788,9 +788,15 @@ section.matching-model {
     .model-grid {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
         margin: 24px 0 145px 0;
-        gap: 40px;
         font-size: 14px;
+
+        .grid {
+            position: relative;
+            width: calc(50% - 20px);
+        }
 
         .grid-title {
             margin-bottom: 24px;
@@ -802,7 +808,6 @@ section.matching-model {
             flex-wrap: wrap;
             gap: 16px;
             display: flex;
-            margin-top: 24px;
 
             .grid-item {
                 width: 163px;
@@ -1347,6 +1352,18 @@ font-weight: 400;
 line-height: 16px;
 }
 .bold-label {}
+
+@media screen and (min-width: 769px) { 
+    section.matching-model .model-grid { width: 740px; }
+    section.matching-model .model-grid .grid { padding-bottom: 360px; }
+    section.matching-model .model-grid .grid .grid-container {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+}
 
 @media screen and (max-width: 768px) {
     body {}
@@ -1901,6 +1918,7 @@ line-height: 16px;
             }
 
             .grid-container {
+                padding-top: 24px;
                 justify-content: space-between;
                 width: 100%;
             }
