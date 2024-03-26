@@ -2169,7 +2169,7 @@ line-height: 16px;
         background: no-repeat center / cover url('./img/popular_list03.png')
     }
 
-    section.matching-model article.popular-model .model-list .model-list-item.designer-1 {
+    /*section.matching-model article.popular-model .model-list .model-list-item.designer-1 {
         background: no-repeat center / cover url('./img/desiner_list01.png')
     }
 
@@ -2179,7 +2179,7 @@ line-height: 16px;
 
     section.matching-model article.popular-model .model-list .model-list-item.designer-3 {
         background: no-repeat center / cover url('./img/desiner_list03.png')
-    }
+    }*/
 
 
     .slick-list.draggable {
