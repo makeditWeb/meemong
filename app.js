@@ -1,13 +1,13 @@
 new numberRush('modelCnt', {
     speed: 5,
     steps: 100,
-    maxNumber: 8479
+    maxNumber: 12040
 })
 
 new numberRush('designerCnt', {
     speed: 5,
     steps: 10,
-    maxNumber: 1277
+    maxNumber: 1746
 })
 
 new numberRush('mouCnt', {
@@ -18,7 +18,7 @@ new numberRush('mouCnt', {
 new numberRush('userCnt', {
     speed: 5,
     steps: 100,
-    maxNumber: 9756
+    maxNumber: 13786
 })
 
 const bodyRect = document.body.getBoundingClientRect().top;

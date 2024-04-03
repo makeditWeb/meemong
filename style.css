@@ -8,6 +8,9 @@ html {
     scroll-behavior: smooth;
 }
 
+a:visited
+,a:hover{color:#000;}
+
 body {
     font-family: 'Pretendard';
     /* color */
