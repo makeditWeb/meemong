@@ -1,28 +1,54 @@
-new numberRush('modelCnt', {
-    speed: 5,
-    steps: 100,
-    maxNumber: 12040 
-})
 
-new numberRush('designerCnt', {
-    speed: 5,
-    steps: 10,
-    maxNumber: 1746 
-})
+function setCurrentTime() {
+    const currentTimeElement = document.getElementById('currentTime');
+    const now = new Date();
+    const formattedTime = now.getFullYear() + '.' +
+        String(now.getMonth() + 1).padStart(2, '0') + '.' +
+        String(now.getDate()).padStart(2, '0') + ' ' +
+        String(now.getHours()).padStart(2, '0') + ':' +
+        String(now.getMinutes()).padStart(2, '0') + ':' +
+        String(now.getSeconds()).padStart(2, '0');
+    currentTimeElement.textContent = formattedTime;
+}
 
-new numberRush('mouCnt', {
-    speed: 5,
-    steps: 100,
-    maxNumber: 7700
-})
-new numberRush('userCnt', {
-    speed: 5,
-    steps: 100,
-    maxNumber: 13786 
-})
+// 페이지 로드 시 현재 시간 설정
+// document.addEventListener('DOMContentLoaded', () => {
+    
+// });
 
-//1
+function updateNumbers() {
+    fetch('/un/count')
+        .then(response => response.json())
+        .then(data => {
+            new numberRush('modelCnt', {
+                speed: 5,
+                steps: 100,
+                maxNumber: data.modelCount
+            });
 
+            new numberRush('designerCnt', {
+                speed: 5,
+                steps: 10,
+                maxNumber: data.designerCount
+            });
+
+            new numberRush('mouCnt', {
+                speed: 5,
+                steps: 100,
+                maxNumber: (data.activeUsers.Designer + data.activeUsers.Model) * 30
+            });
+
+            new numberRush('userCnt', {
+                speed: 5,
+                steps: 100,
+                maxNumber: data.modelCount + data.designerCount,
+            });
+        })
+        .catch(error => console.error('Error fetching count data:', error));
+}
+
+
+//2
 const bodyRect = document.body.getBoundingClientRect().top;
 let lastKnownScrollPosition = 0;
 const sections = document.getElementsByTagName('section')
@@ -96,6 +122,11 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     });
+
+    setCurrentTime();
+    setInterval(setCurrentTime, 1000); // 매 초마다 현재 시간 업데이트
+    updateNumbers();
+    // setInterval(updateNumbers, 10000); // 10초마다 데이터 업데이트
 });
 
 
