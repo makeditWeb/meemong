@@ -1,3 +1,21 @@
+
+function setCurrentTime() {
+    const currentTimeElement = document.getElementById('currentTime');
+    const now = new Date();
+    const formattedTime = now.getFullYear() + '.' +
+        String(now.getMonth() + 1).padStart(2, '0') + '.' +
+        String(now.getDate()).padStart(2, '0') + ' ' +
+        String(now.getHours()).padStart(2, '0') + ':' +
+        String(now.getMinutes()).padStart(2, '0') + ':' +
+        String(now.getSeconds()).padStart(2, '0');
+    currentTimeElement.textContent = formattedTime;
+}
+
+// 페이지 로드 시 현재 시간 설정
+// document.addEventListener('DOMContentLoaded', () => {
+    
+// });
+
 fetch('/un/count')
     .then(response => response.json())
     .then(data => {
@@ -86,6 +104,9 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    setCurrentTime();
+    setInterval(setCurrentTime, 1000); // 매 초마다 현재 시간 업데이트
 
     // Nav Item 클릭 이벤트
     navList.forEach((item, i) => {
