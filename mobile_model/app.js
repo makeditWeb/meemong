@@ -1,25 +1,31 @@
-new numberRush('modelCnt', {
-    speed: 5,
-    steps: 100,
-    maxNumber: 12040
-})
+fetch('/un/count')
+    .then(response => response.json())
+    .then(data => {
+        new numberRush('modelCnt', {
+            speed: 5,
+            steps: 100,
+            maxNumber: data.modelCnt
+        });
 
-new numberRush('designerCnt', {
-    speed: 5,
-    steps: 10,
-    maxNumber: 1746
-})
+        new numberRush('designerCnt', {
+            speed: 5,
+            steps: 10,
+            maxNumber: data.designerCnt
+        });
 
-new numberRush('mouCnt', {
-    speed: 5,
-    steps: 100,
-    maxNumber: 7700
-})
-new numberRush('userCnt', {
-    speed: 5,
-    steps: 100,
-    maxNumber: 13786
-})
+        new numberRush('mouCnt', {
+            speed: 5,
+            steps: 100,
+            maxNumber: (data.activeUsers.Designer + data.activeUsers.Model)*30
+        });
+
+        new numberRush('userCnt', {
+            speed: 5,
+            steps: 100,
+            maxNumber: data.modelCnt + data.designerCount,
+        });
+    })
+    .catch(error => console.error('Error fetching count data:', error));
 //2
 const bodyRect = document.body.getBoundingClientRect().top;
 let lastKnownScrollPosition = 0;
