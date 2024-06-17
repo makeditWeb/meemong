@@ -4,13 +4,13 @@ fetch('/un/count')
         new numberRush('modelCnt', {
             speed: 5,
             steps: 100,
-            maxNumber: data.modelCnt
+            maxNumber: data.modelCount
         });
 
         new numberRush('designerCnt', {
             speed: 5,
             steps: 10,
-            maxNumber: data.designerCnt
+            maxNumber: data.designerCount
         });
 
         new numberRush('mouCnt', {
@@ -22,7 +22,7 @@ fetch('/un/count')
         new numberRush('userCnt', {
             speed: 5,
             steps: 100,
-            maxNumber: data.modelCnt + data.designerCount,
+            maxNumber: data.modelCount + data.designerCount,
         });
     })
     .catch(error => console.error('Error fetching count data:', error));
