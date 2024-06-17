@@ -20,6 +20,7 @@ new numberRush('userCnt', {
     steps: 100,
     maxNumber: 13786
 })
+//2
 const bodyRect = document.body.getBoundingClientRect().top;
 let lastKnownScrollPosition = 0;
 const sections = document.getElementsByTagName('section')

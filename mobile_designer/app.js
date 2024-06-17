@@ -21,6 +21,8 @@ new numberRush('userCnt', {
     maxNumber: 13786 
 })
 
+//1
+
 const bodyRect = document.body.getBoundingClientRect().top;
 let lastKnownScrollPosition = 0;
 const sections = document.getElementsByTagName('section')
