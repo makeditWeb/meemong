@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // setCurrentTime();
+    setCurrentTime();
     setInterval(setCurrentTime, 1000); // 매 초마다 현재 시간 업데이트
     updateNumbers();
     // setInterval(updateNumbers, 10000); // 10초마다 데이터 업데이트
