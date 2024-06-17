@@ -533,7 +533,21 @@
         </div>
     </footer>
     <!-- Footer 끝 -->
+    <script>
+        async function fetchData() {
+            const response = await fetch('https://meemong.com/un/count');
+            const data = await response.json();
+
+            document.getElementById('modelCnt').innerText = data.modelCount;
+            document.getElementById('designerCnt').innerText = data.designerCount;
+            document.getElementById('mouCnt').innerText = (data.activeUsers.Designer + data.activeUsers.Model)*30;
+            document.getElementById('userCnt').innerText = data.modelCount + data.designerCount;
+        }
+
+        fetchData();
+    </script>
     <script src="/number-rush.js?ver=2"></script>
     <script src="/app.js?ver=2"></script>
+
 </body>
 </html>
